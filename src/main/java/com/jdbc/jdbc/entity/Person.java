@@ -5,6 +5,9 @@ public class Person {
     private String name;
     private String location;
 
+    public Person() {
+    }
+
     public Person(int id, String name, String location) {
         this.id = id;
         this.name = name;
@@ -33,5 +36,14 @@ public class Person {
 
     public void setLocation(String location) {
         this.location = location;
+    }
+
+    @Override
+    public String toString() {
+        return "\n Person{" +
+                "id=" + id +
+                ", name='" + name + '\'' +
+                ", location='" + location + '\'' +
+                '}';
     }
 }
